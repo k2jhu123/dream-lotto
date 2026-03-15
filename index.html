@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>꿈해몽 로또</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<h1>꿈해몽 로또</h1>
+
+<div class="card">
+
+<textarea id="dreamInput" placeholder="꿈 내용을 입력하세요"></textarea>
+
+<select id="gender">
+<option value="">성별 선택</option>
+<option value="male">남성</option>
+<option value="female">여성</option>
+</select>
+
+<input type="date" id="birth">
+
+<button onclick="showInterpretation()">꿈 해몽 보기</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>꿈 해몽</h2>
+
+<div id="dreamResult">
+꿈 내용을 입력하면 해몽이 표시됩니다
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>오늘의 꿈 운세</h2>
+
+<div id="luckResult">
+꿈 해몽을 보면 오늘의 운세가 표시됩니다
+</div>
+
+</div>
+
+
+<div class="card">
+
+<button onclick="startLotto()">로또 번호 받기</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>추천 로또 번호</h2>
+
+<div id="lottoNumbers"></div>
+
+<div id="lottoAdArea"></div>
+
+<div id="numberReason"></div>
+
+</div>
+
+
+<div class="card">
+
+<h3>최근 추천 기록</h3>
+
+<div id="history"></div>
+
+</div>
+
+
+<div class="card">
+
+<h3>오늘의 행운 번호</h3>
+
+<div id="todayLuckyCard"></div>
+
+</div>
+
+
+<div class="card">
+
+<h3>공유하기</h3>
+
+<button onclick="shareKakao()">카카오톡 공유</button>
+<button onclick="shareLink()">링크 복사</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

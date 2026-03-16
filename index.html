@@ -17,7 +17,19 @@
 
 <h1>꿈해몽 로또</h1>
 
-<div class="card">
+<!-- 상단 간단 메뉴 추가 -->
+<div class="card" id="topNav">
+  <nav>
+    <a href="#dreamForm">꿈 입력</a> |
+    <a href="#dreamInterpretation">꿈 해몽</a> |
+    <a href="#dreamFortune">오늘의 꿈 운세</a> |
+    <a href="#lottoSection">추천 로또 번호</a> |
+    <a href="#luckySection">오늘의 행운 번호</a> |
+    <a href="#siteFooter">이용 안내</a>
+  </nav>
+</div>
+
+<div class="card" id="dreamForm">
 
 <textarea id="dreamInput" placeholder="꿈 내용을 입력하세요"></textarea>
 
@@ -34,7 +46,7 @@
 </div>
 
 
-<div class="card">
+<div class="card" id="dreamInterpretation">
 
 <h2>꿈 해몽</h2>
 
@@ -45,7 +57,7 @@
 </div>
 
 
-<div class="card">
+<div class="card" id="dreamFortune">
 
 <h2>오늘의 꿈 운세</h2>
 
@@ -63,13 +75,26 @@
 </div>
 
 
-<div class="card">
+<div class="card" id="lottoSection">
 
 <h2>추천 로또 번호</h2>
 
 <div id="lottoNumbers"></div>
 
 <div id="lottoAdArea"></div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2084458267795230"
+     crossorigin="anonymous"></script>
+<!-- lotto_loading_ad_display -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2084458267795230"
+     data-ad-slot="2080815222"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <div id="numberReason"></div>
 
@@ -85,7 +110,7 @@
 </div>
 
 
-<div class="card">
+<div class="card" id="luckySection">
 
 <h3>오늘의 행운 번호</h3>
 
@@ -102,6 +127,16 @@
 <button onclick="shareLink()">링크 복사</button>
 
 </div>
+
+<!-- 하단 안내 추가 -->
+<div class="card" id="siteFooter">
+  <h3>사이트 안내</h3>
+  <p>이 사이트는 꿈 해몽과 로또 번호 추천을 재미 요소로 제공하는 콘텐츠형 서비스입니다.</p>
+  <p>제공되는 해몽과 추천 번호는 참고용이며, 실제 결과를 보장하지 않습니다.</p>
+  <p>입력한 정보는 화면 내 결과 표시 목적의 기능으로 사용됩니다.</p>
+</div>
+
+<a href="privacy.html">개인정보처리방침</a>
 
 </div>
 

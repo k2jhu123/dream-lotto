@@ -655,3 +655,113 @@ shareLink();
 
 }
 }
+
+
+// ===============================
+// 애드센스 승인용 안내 콘텐츠 추가
+// ===============================
+
+function renderAdSenseReadySections(){
+
+let app=document.querySelector(".app");
+if(!app) return;
+
+// 이미 있으면 다시 만들지 않음
+if(document.getElementById("adsenseReadyIntro")) return;
+
+function createCard(id,title,html){
+let card=document.createElement("div");
+card.className="card";
+card.id=id;
+
+let titleEl=document.createElement("h3");
+titleEl.innerText=title;
+
+let body=document.createElement("div");
+body.innerHTML=html;
+
+card.appendChild(titleEl);
+card.appendChild(body);
+
+app.appendChild(card);
+}
+
+// 1. 서비스 소개
+createCard(
+"adsenseReadyIntro",
+"서비스 소개",
+`
+<p>
+이 사이트는 꿈 내용을 간단히 입력하면 꿈에 등장한 상징을 바탕으로 해몽을 보여주고,
+재미 요소로 로또 추천 번호를 함께 제공하는 엔터테인먼트형 서비스입니다.
+</p>
+<p>
+사용자는 꿈 해몽, 오늘의 꿈 운세, 오늘의 행운 번호, 추천 번호 설명을 한 번에 확인할 수 있습니다.
+</p>
+`
+);
+
+// 2. 이용 안내
+createCard(
+"adsenseReadyGuide",
+"이용 안내",
+`
+<p>이용 방법은 매우 간단합니다.</p>
+<ol>
+<li>꿈 내용을 입력합니다.</li>
+<li>성별과 생년월일을 선택할 수 있습니다.</li>
+<li>꿈 해몽 보기를 누르면 해몽과 별점 운세를 확인할 수 있습니다.</li>
+<li>로또 번호 받기를 누르면 추천 번호 5세트를 확인할 수 있습니다.</li>
+</ol>
+`
+);
+
+// 3. 면책 및 안내
+createCard(
+"adsenseReadyNotice",
+"안내 및 면책",
+`
+<p>
+이 사이트는 꿈 해몽과 번호 추천을 재미 요소로 제공하는 엔터테인먼트형 정보 서비스 입니다.
+</p>
+<p>
+제공되는 해몽과 추천 번호는 참고용이며, 실제 결과를 보장하지 않습니다.
+</p>
+`
+);
+
+// 4. 개인정보 안내
+createCard(
+"adsenseReadyPrivacy",
+"개인정보 안내",
+`
+<p>
+이 사이트에서 입력하는 꿈 내용, 성별, 생년월일 정보는 추천 결과를 화면에 표시하기 위한 용도로만 사용됩니다.
+</p>
+<p>
+현재 브라우저 내 일부 기능은 편의를 위해 로컬 저장소(localStorage)를 사용할 수 있습니다.
+</p>
+<p>
+별도의 회원 가입 기능은 없으며, 민감한 개인정보 입력은 권장하지 않습니다.
+</p>
+`
+);
+
+// 5. 문의 안내
+createCard(
+"adsenseReadyContact",
+"문의 안내",
+`
+<p>
+서비스 관련 문의나 수정 요청은 추후 별도 문의 채널이 준비되면 공지될 예정입니다.
+</p>
+<p>
+현재는 테스트 및 운영 준비 단계이며, 콘텐츠와 기능은 계속 개선될 수 있습니다.
+</p>
+`
+);
+
+}
+
+// 페이지 로드시 승인용 카드 추가
+renderAdSenseReadySections();

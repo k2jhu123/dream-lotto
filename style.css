@@ -136,3 +136,200 @@ transform:scale(1);
 }
 
 }
+
+/* ===============================
+상단 메뉴 스타일 (AdSense 승인용 네비게이션)
+=============================== */
+
+#topNav nav{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+font-size:14px;
+}
+
+#topNav a{
+text-decoration:none;
+color:#4f46e5;
+font-weight:600;
+padding:6px 10px;
+border-radius:6px;
+background:#eef2ff;
+}
+
+#topNav a:hover{
+background:#e0e7ff;
+}
+
+
+/* ===============================
+사이트 안내 영역
+=============================== */
+
+#siteFooter{
+
+font-size:14px;
+line-height:1.6;
+color:#444;
+
+}
+
+#siteFooter p{
+
+margin-bottom:10px;
+
+}
+
+
+/* ===============================
+AdSense 광고 영역 스타일
+=============================== */
+
+#lottoAdArea{
+
+margin-top:10px;
+text-align:center;
+
+min-height:90px;
+
+}
+
+
+/* ===============================
+모바일 대응
+=============================== */
+
+@media (max-width:480px){
+
+#topNav nav{
+font-size:13px;
+gap:6px;
+}
+
+}
+
+/* ===============================
+승인용 안내 카드 가독성 개선
+=============================== */
+
+#adsenseReadyIntro,
+#adsenseReadyGuide,
+#adsenseReadyNotice,
+#adsenseReadyPrivacy,
+#adsenseReadyContact,
+#siteFooter{
+
+padding:14px;
+margin-bottom:14px;
+
+}
+
+#adsenseReadyIntro h3,
+#adsenseReadyGuide h3,
+#adsenseReadyNotice h3,
+#adsenseReadyPrivacy h3,
+#adsenseReadyContact h3,
+#siteFooter h3{
+
+font-size:15px;
+margin-top:0;
+margin-bottom:10px;
+
+}
+
+#adsenseReadyIntro p,
+#adsenseReadyGuide p,
+#adsenseReadyNotice p,
+#adsenseReadyPrivacy p,
+#adsenseReadyContact p,
+#siteFooter p{
+
+font-size:13px;
+line-height:1.5;
+margin:0 0 8px 0;
+color:#444;
+
+}
+
+#adsenseReadyGuide ol{
+
+padding-left:18px;
+margin:0;
+
+}
+
+#adsenseReadyGuide li{
+
+font-size:13px;
+line-height:1.5;
+margin-bottom:6px;
+color:#444;
+
+}
+
+
+/* ===============================
+상단 메뉴도 조금 더 컴팩트하게
+=============================== */
+
+#topNav{
+
+padding:12px;
+
+}
+
+#topNav nav{
+gap:8px;
+}
+
+#topNav a{
+font-size:13px;
+padding:5px 8px;
+}
+
+
+/* ===============================
+모바일에서 더 답답하지 않게
+=============================== */
+
+@media (max-width:480px){
+
+#adsenseReadyIntro,
+#adsenseReadyGuide,
+#adsenseReadyNotice,
+#adsenseReadyPrivacy,
+#adsenseReadyContact,
+#siteFooter{
+
+padding:12px;
+margin-bottom:12px;
+
+}
+
+#adsenseReadyIntro h3,
+#adsenseReadyGuide h3,
+#adsenseReadyNotice h3,
+#adsenseReadyPrivacy h3,
+#adsenseReadyContact h3,
+#siteFooter h3{
+
+font-size:14px;
+margin-bottom:8px;
+
+}
+
+#adsenseReadyIntro p,
+#adsenseReadyGuide p,
+#adsenseReadyNotice p,
+#adsenseReadyPrivacy p,
+#adsenseReadyContact p,
+#siteFooter p,
+#adsenseReadyGuide li{
+
+font-size:12px;
+line-height:1.45;
+
+}
+
+}
